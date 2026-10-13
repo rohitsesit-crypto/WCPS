@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { ALL_QUESTIONS, QUESTION_ORDER } from '../../lib/quizData';
-import type { Answers } from '../../lib/scoring';
+import type { Answers } from '../../lib/scoring'
 import { COMPONENTS, WCPS_FORMULA, presetAnswers, runScoringChecks, weightedBreakdown } from '../../lib/scoringTest';
 import styles from './scoring-test.module.css';
 

@@ -20,7 +20,7 @@ const description =
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl || "http://localhost:3000"),
+  metadataBase: new URL(siteUrl || "https://wcps-ses.vercel.app"),
   title,
   description,
   applicationName: "WCPS",
@@ -35,17 +35,17 @@ export const metadata: Metadata = {
     title,
     description,
     images: [{
-      url: "/wcps-share.png",
-      width: 1200,
-      height: 630,
-      alt: "WCPS — Wealth Creation Potential Score. Discover your potential through a 27-question assessment.",
+      url: "/logo.png",
+      width: 486,
+      height: 405,
+      alt: "WCPS logo",
     }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title,
     description,
-    images: ["/wcps-share.png"],
+    images: ["/logo.png"],
   },
 };
 
